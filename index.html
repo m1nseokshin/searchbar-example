@@ -1,31 +1,37 @@
-<!DOCTYPE html>
-<html lang="en" >
+<!DOCTYPE html>  
+<html>
 <head>
-  <meta charset="UTF-8">
-  <title>검색 바 예제</title>
-  <link rel="stylesheet" href="./style.css">
-
+    <meta charset="utf-8">  
+    <meta name="viewport" content="width=device-width, initial-scale=1">  
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <title>검색 바 예제</title>
 </head>
-<body>
-<!-- partial:index.partial.html -->
-<a class="button"><img src="search.svg"></a>	
 
-<div class="overlay">
-	<section>
-	  <!-- 검색어 입력창   -->
-	  <input
-		type="text"
-		id="search"
-		placeholder="무엇이든 검색하세요!"
-		autocomplete="off"
-	  />
-	  <!-- 자동완성 단어 리스트 -->
-	  <div class="autocomplete"></div>
-	</section>
-	<!-- partial -->
-	  <script  src="./search.js"></script>
-	  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js'></script><script  src="./script.js"></script>
-  
-  </div>
-</body>
-</html>
+<body>
+    <div id="header"></div>
+    
+    <div class="header-icon">
+        <a class="search"><img src="search.svg"></a>
+
+    </div>
+
+    <!-- Search -->
+
+    <div class="overlay">
+        <section>
+          <!-- 검색어 입력창   -->
+          <input
+            type="text"
+            id="search"
+            placeholder="무엇이든 검색하세요!"
+            autocomplete="off"
+          />
+          <!-- 자동완성 단어 리스트 -->
+          <div class="autocomplete"></div>
+        </section>
+          <script  src="./search.js"></script>
+          <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js'></script>
+          <script  src="./script.js"></script>
+          <div class="background"></div>	
+      
+    </div>

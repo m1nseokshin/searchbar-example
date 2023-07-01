@@ -1,9 +1,11 @@
-// burger menu icon 클릭하면 full page menu 나오기
-    $(function() {
-        $('.button').on('click', function(event){
-            event.preventDefault();
+$(function() {
+    $('.search').on('click', function(event){
+        event.preventDefault();
             
-            $(this).toggleClass('active');
-            $('.overlay').toggleClass('visible');
-        });
+        $(this).toggleClass('active');
+        $('.overlay').toggleClass('visible');
+        $('.background').toggleClass('visible');
+        $('body').toggleClass('active');
     });
+
+});
